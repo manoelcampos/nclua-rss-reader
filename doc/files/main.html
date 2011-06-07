@@ -1,0 +1,411 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <title>Reference</title>
+    <link rel="stylesheet" href="../luadoc.css" type="text/css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+<div id="main">
+
+<div id="navigation">
+
+
+<h1>LuaDoc</h1>
+<ul>
+	
+	<li><a href="../index.html">Index</a></li>
+	
+</ul>
+
+
+<!-- Module list -->
+
+<h1>Modules</h1>
+<ul>
+
+	<li>
+		<a href="../modules/tcp.html">tcp</a>
+	</li>
+
+</ul>
+
+
+
+<!-- File list -->
+
+<h1>Files</h1>
+<ul>
+
+	<li><strong>main.lua</strong></li>
+	
+	<li>
+		<a href="../files/tcp.html">tcp.lua</a>
+	</li>
+
+</ul>
+
+
+
+
+
+
+</div> <!-- id="navigation" -->
+
+<div id="content">
+
+<h1>File <code>main.lua</code></h1>
+
+
+
+
+
+
+
+<h2>Functions</h2>
+<table class="function_list">
+
+	<tr>
+	<td class="name" nowrap><a href="#autoForward">autoForward</a>&nbsp;()</td>
+	<td class="summary">Avança para a próxima notícia.</td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#breakString">breakString</a>&nbsp;(str, maxLineSize)</td>
+	<td class="summary">Quebra uma string para que a mesma tenha linhas com um comprimento máximo definido, não quebrando a mesma no meio das palavras.</td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#createFile">createFile</a>&nbsp;(text, fileName)</td>
+	<td class="summary">Cria um arquivo com o conteúdo informado em text.</td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#drawApplication">drawApplication</a>&nbsp;()</td>
+	<td class="summary">Desenha os componentes gráficos da aplicação </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#escape">escape</a>&nbsp;(s)</td>
+	<td class="summary">Função para converter uma string para o formato URL-Encode, também chamado de Percent Encode, segundo RFC 3986.</td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#handler">handler</a>&nbsp;(evt)</td>
+	<td class="summary">Função tratadora de eventos </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#moveItemIndex">moveItemIndex</a>&nbsp;(index, forward)</td>
+	<td class="summary">Retorna um novo índice de notícia a ser exibida.</td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#printable">printable</a>&nbsp;(tb, level)</td>
+	<td class="summary">Imprime uma tabela, de forma recursiva </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#showItem">showItem</a>&nbsp;()</td>
+	<td class="summary">Exibe uma notícia na tela </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#writeText">writeText</a>&nbsp;(text)</td>
+	<td class="summary">Escreve um texto na parte inferior da área do canvas lua </td>
+	</tr>
+
+</table>
+
+
+
+
+
+
+<br/>
+<br/>
+
+
+
+
+<h2><a name="functions"></a>Functions</h2>
+<dl class="function">
+
+
+
+<dt><a name="autoForward"></a><strong>autoForward</strong>&nbsp;()</dt>
+<dd>
+Avança para a próxima notícia. Função utilizada para fazer o avanço automático para a próxima notícia depois de um determinado tempo.
+
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="breakString"></a><strong>breakString</strong>&nbsp;(str, maxLineSize)</dt>
+<dd>
+Quebra uma string para que a mesma tenha linhas com um comprimento máximo definido, não quebrando a mesma no meio das palavras.
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  str: String a ser quebrada
+	</li>
+	
+	<li>
+	  maxLineSize: Quantidade máxima de caracteres por linha
+	</li>
+	
+</ul>
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="createFile"></a><strong>createFile</strong>&nbsp;(text, fileName)</dt>
+<dd>
+Cria um arquivo com o conteúdo informado em text. Se o arquivo já existir, substitui.
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  text: Texto a ser adicionado no arquivo
+	</li>
+	
+	<li>
+	  fileName: Nome do arquivo a ser gerado.
+	</li>
+	
+</ul>
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="drawApplication"></a><strong>drawApplication</strong>&nbsp;()</dt>
+<dd>
+Desenha os componentes gráficos da aplicação
+
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="escape"></a><strong>escape</strong>&nbsp;(s)</dt>
+<dd>
+Função para converter uma string para o formato URL-Encode, também chamado de Percent Encode, segundo RFC 3986. Fonte: http://www.lua.org/pil/20.3.html
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  s: String a ser codificada
+	</li>
+	
+</ul>
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="handler"></a><strong>handler</strong>&nbsp;(evt)</dt>
+<dd>
+Função tratadora de eventos
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  evt: Tabela contendo dados sobre o evento disparado
+	</li>
+	
+</ul>
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="moveItemIndex"></a><strong>moveItemIndex</strong>&nbsp;(index, forward)</dt>
+<dd>
+Retorna um novo índice de notícia a ser exibida.
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  index: Valor do índice da notícia atualmente exibida
+	</li>
+	
+	<li>
+	  forward: Se igual a true, incrementa o índice em 1, senão, decrementa em 1.
+	</li>
+	
+</ul>
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="printable"></a><strong>printable</strong>&nbsp;(tb, level)</dt>
+<dd>
+Imprime uma tabela, de forma recursiva
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  tb: A tabela a ser impressa
+	</li>
+	
+	<li>
+	  level: Apenas usado internamente para imprimir espaços para representar os níveis dentro da tabela.
+	</li>
+	
+</ul>
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="showItem"></a><strong>showItem</strong>&nbsp;()</dt>
+<dd>
+Exibe uma notícia na tela
+
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="writeText"></a><strong>writeText</strong>&nbsp;(text)</dt>
+<dd>
+Escreve um texto na parte inferior da área do canvas lua
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  text: Texto a ser escrito
+	</li>
+	
+</ul>
+
+
+
+
+
+
+
+
+</dd>
+
+
+</dl>
+
+
+
+
+
+
+
+</div> <!-- id="content" -->
+
+</div> <!-- id="main" -->
+
+<div id="about">
+	<p><a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0!" height="31" width="88" /></a></p>
+</div> <!-- id="about" -->
+
+</div> <!-- id="container" -->	
+</body>
+</html>
