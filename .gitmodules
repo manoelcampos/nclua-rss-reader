@@ -1,3 +1,0 @@
-[submodule "luaxml"]
-	path = luaxml
-	url = git@github.com:manoelcampos/LuaXML

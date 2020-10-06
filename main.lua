@@ -5,8 +5,8 @@
 
 require "tcp"
 
-dofile("luaxml/xml.lua")
-dofile("luaxml/handler.lua")
+dofile("xml2lua/xml.lua")
+dofile("xml2lua/handler.lua")
 
 ---Imprime uma tabela, de forma recursiva
 --@param tb A tabela a ser impressa
